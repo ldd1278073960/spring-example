@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="App" class="com.vip.spring.App">
+    <!--</bean>-->
+    <!--&lt;!&ndash;什么时候用，什么时候加载对象  lazy-init=false&ndash;&gt;-->
+    <!--&lt;!&ndash;<bean id="user" class="com.vip.spring.App" lazy-init="false">&ndash;&gt;-->
+    <!--</bean>-->
+
+    <!--scope
+    可选值：   property   每次都是重新创建对象
+               singleton   单例模式
+    -->
+    <!--<bean id="gg" class="com.vip.spring.App" scope="singleton">-->
+    <!--</bean>-->
+
+        <!--init    表示对象创建完成（调用完构造方法之后第一个执行的方法）
+            destroy
+
+        -->
+    <!--<bean id="gg" class="com.vip.spring.App" init-method="init" destroy-method="close">-->
+
+    </bean>
+</beans>
